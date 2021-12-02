@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)https://dheerajarora1997.github.io/knowledge-base/search.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+    <link rel="stylesheet" href="./search-expand_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./search-expand_files/font-awesome.css">
+    <style>
+        /* *{outline: 1px solid #f1f1f1;} */
+        .expended-search {
+            width: 0;
+            top: 0;
+            right: 0;
+            -webkit-transition: all .7s ease-in-out;
+            -moz-transition: all .7s ease-in-out;
+            -o-transition: all .7s ease-in-out;
+            transition: all .7s ease-in-out;
+        }
+
+        .expended-search.active {
+            width: 350px;
+        }
+
+        @media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+    body{background: red;}
+}}
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-md-8">
+                    <h3>Heading Here</h3>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-group d-flex justify-content-end list-group-horizontal">
+                        <li class="list-group-item p-2 border-0 position-relative">
+                            <a href="javascript:void(0);" class="expended-search-link">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </a>
+                            <div class="expended-search position-absolute">
+                                <div class="row no-gutters">
+                                    <div class="col-7">
+                                        <input type="text" class="form-control" placeholder="Search By Ticket Id">
+                                    </div>
+                                    <div class="col-4">
+                                        <select class="form-control">
+                                            <option>Ticket Id</option>
+                                            <option>Email</option>
+                                            <option>Phone</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-1">
+                                        <a href="javascript:void(0);" data-dismiss="search" class="bg-white px-2 d-flex justify-content-center align-items-center h-100 text-decoration-none">
+                                            <i class="fa fa-times text-dark" aria-hidden="true"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item p-2 border-0 ">
+                            <a href="javascript:void(0);">
+                                <i class="fa fa-filter" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./search-expand_files/jquery-3.5.1.slim.min.js"></script>
+    <script src="./search-expand_files/popper.min.js"></script>
+    <script src="./search-expand_files/bootstrap.min.js"></script>
+    <script>
+        $('.expended-search-link').click(function () {
+            $('.expended-search').addClass('active');
+        });
+        $('[data-dismiss="search"]').click(function () {
+            $('.expended-search').removeClass('active');
+        });
+        $(document).ready(function(){
+            let defaultSelect = $('select').val();
+            $('input').attr('placeholder', 'Search By '  + defaultSelect);
+            $('select').change(function(){
+                $('input').val('');
+                let changedSelect = $('select').val();
+                $('input').attr('placeholder', 'Search By '  + changedSelect);
+            });
+        });
+    </script>
+
+
+
+</body></html>
