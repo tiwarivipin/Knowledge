@@ -1,0 +1,36 @@
+ <html>
+ <head></head>
+ <body>
+<div class="container">
+	<div class="em-list"></div>
+	<div class="em-list"></div>
+	<div class="em-list"></div>
+</div>
+
+<style>
+.container .em-list{
+min-width:120px;
+background:#ccc;
+margin:0 20px;
+border:1px solid #000;
+min-height:130px;
+float:left;
+}
+
+.hover-effect{
+ opacity:.2;
+}
+</style>
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script>
+jQuery(".em-list").hover(function(){
+  jQuery(".em-list").not(this).addClass("hover-effect")},function(){
+	jQuery(".em-list").removeClass("hover-effect")
+ });
+</script>
+</body>
+</html>
