@@ -93,6 +93,26 @@
                 $('input').attr('placeholder', 'Search By '  + changedSelect);
             });
         });
+        
+    $("#searchMasterData").on('keyup', function() {
+    let searchValLen = $("#searchMasterData").val().length;
+    if (searchValLen >= 3) {
+      $("#expendedSearch").addClass("active");
+      $('.overlaybg').css('display','block');
+      $('body').css('overflow','hidden');
+    } else {
+      $("#expendedSearch").removeClass("active");
+      $('.overlaybg').css('display','none');
+      $('body').css('overflow','auto')
+    }
+    });
+    $(document).on('click', 'body', function(e) {
+    if (!$(e.target).is('#expendedSearch,.searchSuggestion'))
+    $('#expendedSearch').removeClass('active');
+    $('.overlaybg').css('display','none');
+    $('body').css('overflow','auto');
+    $('#searchMasterData').val('');
+    })
     </script>
 
 
