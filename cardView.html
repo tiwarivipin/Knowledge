@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Table card View</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+    integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <style>
+    body {
+      margin: 10px;
+      background-color: #f1f3f4;
+    }
+
+    .newTableDesign {
+      border: 1px solid #eeeef0;
+    }
+
+    .newTableDesign table {
+      width: 100%;
+      border-radius: 4px;
+      background: #fafafa;
+      margin-bottom: 0;
+      overflow: hidden;
+      border-spacing: 0;
+      border-collapse: collapse;
+      margin: 0;
+    }
+
+    .newTableDesign .table>thead>tr>th {
+      background-color: #e0e3e8;
+      white-space: nowrap;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border: none;
+    }
+
+    .newTableDesign .table>tbody>tr>td,
+    .newTableDesign .table>tbody>tr>th,
+    .newTableDesign .table>tfoot>tr>td,
+    .newTableDesign .table>tfoot>tr>th,
+    .newTableDesign .table>thead>tr>td,
+    .newTableDesign .table>thead>tr>th {
+      border-color: #eeeef0;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+
+    .newTableDesign .table>tbody>tr>td {
+      background-color: #fff;
+      vertical-align: middle;
+    }
+
+
+    @media(max-width:991px) {
+      .newTableDesign .table thead {
+        display: none !important;
+      }
+
+      .newTableDesign .table * {
+        position: relative;
+      }
+
+      .newTableDesign .table tbody tr.grid-table-row {
+        border-top: 11px solid #f1f3f4;
+        margin: 10px0;
+        padding: 10px 0;
+      }
+
+      .newTableDesign .table tbody tr.grid-table-row td {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: 40px;
+        width: 100%;
+        display: block;
+        padding-left: 40% !important;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .newTableDesign .table tbody tr.grid-table-row td:before {
+        content: attr(data-title);
+        font-size: 12px;
+        color: #999;
+        line-height: 1.2;
+        font-weight: unset;
+        position: absolute;
+        width: 30%;
+        top: 12px;
+        left: 20px;
+        font-weight: 400;
+        word-break: break-word;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="table-responsive newTableDesign">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Automation List Name </th>
+          <th>Parent List Name </th>
+          <th>Segment Name </th>
+          <th>Created On </th>
+          <th>Created By </th>
+          <th>Status </th>
+          <th>Start On </th>
+          <th>End On</th>
+          <th>Actions</th>
+          <th>Tags</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="grid-table-row">
+          <td data-title="ID">29897</td>
+          <td data-title="Automation List Name">Automation 1672636176</td>
+          <td data-title="Parent List Name">Lms</td>
+          <td data-title="Segment Name">02/01/2023 10:39 AM </td>
+          <td data-title="Created On">System ( NPF Automation ) </td>
+          <td data-title="Created By">Draft</td>
+          <td data-title="Status">02/01/2023 10:39 AM</td>
+          <td data-title="Actions">02/01/2023 10:39 AM</td>
+          <td data-title="End On">test</td>
+          <td data-title="Tags"></td>
+          <td data-title="Action"></td>
+        </tr>
+        <tr class="grid-table-row">
+          <td data-title="ID">29897</td>
+          <td data-title="Automation List Name">
+            Automation 1672636176</td>
+          <td data-title="Parent List Name">Lms</td>
+          <td data-title="Segment Name">02/01/2023 10:39 AM </td>
+          <td data-title="Created On">System ( NPF Automation ) </td>
+          <td data-title="Created By">Draft</td>
+          <td data-title="Status">02/01/2023 10:39 AM</td>
+          <td data-title="Actions">02/01/2023 10:39 AM</td>
+          <td data-title="End On">test</td>
+          <td data-title="Tags"></td>
+          <td data-title="Action"></td>
+        </tr>
+        <tr class="grid-table-row">
+          <td data-title="ID">29897</td>
+          <td data-title="Automation List Name">
+            Automation 1672636176</td>
+          <td data-title="Parent List Name">Lms</td>
+          <td data-title="Segment Name">02/01/2023 10:39 AM </td>
+          <td data-title="Created On">System ( NPF Automation ) </td>
+          <td data-title="Created By">Draft</td>
+          <td data-title="Status">02/01/2023 10:39 AM</td>
+          <td data-title="Actions">02/01/2023 10:39 AM</td>
+          <td data-title="End On">test</td>
+          <td data-title="Tags"></td>
+          <td data-title="Action"></td>
+        </tr>
+        <tr class="grid-table-row">
+          <td data-title="ID">29897</td>
+          <td data-title="Automation List Name">
+            Automation 1672636176</td>
+          <td data-title="Parent List Name">Lms</td>
+          <td data-title="Segment Name">02/01/2023 10:39 AM </td>
+          <td data-title="Created On">System ( NPF Automation ) </td>
+          <td data-title="Created By">Draft</td>
+          <td data-title="Status">02/01/2023 10:39 AM</td>
+          <td data-title="Actions">02/01/2023 10:39 AM</td>
+          <td data-title="End On">test</td>
+          <td data-title="Tags"></td>
+          <td data-title="Action"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
