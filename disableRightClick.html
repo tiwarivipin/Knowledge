@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disable Right Click</title>
+  <style>
+    body {
+      margin: 10px auto;
+    }
+
+    .dot-loader {
+      margin: 0 auto;
+      max-height: 40px;
+    }
+
+    .custom-skeleton .skeleton-loader {
+      width: 100%;
+      min-height: 12px;
+      display: block;
+      margin: 0 0 15px;
+      background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 80%), #eaeaea;
+      background-repeat: repeat-y;
+      background-size: 50px 500px;
+      background-position: 0 0;
+      animation: shine 1s infinite;
+      border-radius: 10px;
+    }
+
+    .custom-skeleton .skeleton-loader.picture {
+      min-height: 16px;
+      max-width: 16px;
+      border-radius: 100%;
+      margin-bottom: 0;
+    }
+
+    .custom-skeleton .skeleton-loader.title {
+      min-height: 18px;
+      width: 60%;
+    }
+
+    .custom-skeleton .skeleton-loader.description {
+      width: 80%;
+      margin-bottom: 0;
+    }
+
+    .custom-skeleton .skeleton-loader.description+.custom-skeleton .skeleton-loader.description {
+      width: 75%;
+    }
+
+    .custom-skeleton .skeleton-loader.description+.custom-skeleton .skeleton-loader.description+.custom-skeleton .skeleton-loader.description+.custom-skeleton .skeleton-loader.description {
+      width: 65%;
+    }
+
+    @keyframes shine {
+      to {
+        background-position: 100% 0, 0 0;
+      }
+    }
+
+    .minmax100 {
+      min-width: 100px;
+      max-width: 100px;
+    }
+
+    .minmax250 {
+      min-width: 250px;
+      max-width: 250px;
+    }
+
+    .custom-skeleton {
+      margin: 0 auto;
+      border-right: 1px solid #ccc;
+      border-top: 1px solid #ccc;
+    }
+
+    .custom-skeleton td {
+      border-left: 1px solid #ccc;
+      border-bottom: 1px solid #ccc;
+      padding: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <table class="custom-skeleton" cellspacing="0" cellpadding="0">
+    <tbody>
+      <tr>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+      </tr>
+      <tr>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax100 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+        <td class="minmax250 text-right">
+          <div class="skeleton-loader my-0 min-max-50"></div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+    integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function () {
+      $(document).bind("contextmenu", function (e) {
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
