@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <table class="table table-hover border tbodyBorder border-collapse-unset">
+    <thead>
+      <tr>
+        <th class="bg-light"><span class="muted">Order ID : </span>17668_341_2266 <br><span class="muted">Payment
+            request date</span>: 04-12-2023 07:00:52 PM <br><span class="muted">Source</span>:NA </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="text-left relative"><span onclick="copyKey('#secretInputNew')" class="copiContainer"
+            data-toggle="tooltip" data-placement="bottom" title=""
+            data-original-title="Click&nbsp;here&nbsp;to&nbsp;Copy">Copy</span><textarea
+            class="secretInput form-control" id="secretInputNew" cols="30"
+            rows="5">{"gateway":"Razorpay","college_id":5506,"form_id":"17668","order_id":"17668_341_2266","user_id":10899,"payment_type":"midpayment","currency_code":"INR","isPaymentLinkEnable":0}</textarea>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-left relative"><span onclick="copyKey('#secretInputNew2')" class="copiContainer"
+            data-toggle="tooltip" data-placement="bottom" title=""
+            data-original-title="Click&nbsp;here&nbsp;to&nbsp;Copy">Copy</span><textarea
+            class="secretInput form-control" id="secretInputNew2" cols="30"
+            rows="5">{"result":{"error":"No Response"}}</textarea></td>
+            <input type="file" capture="user" accept="image/">
+      </tr>
+    </tbody>
+  </table>
+  <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+    crossorigin="anonymous"></script>
+  <script>
+    function copyKey(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+      $('.tooltip .tooltip-inner').html('Data Copied');
+    }
+  </script>
+</body>
+
+</html>
