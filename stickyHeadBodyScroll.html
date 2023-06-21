@@ -1,0 +1,877 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+      .table-duplicate {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        overflow: hidden;
+        margin: 0 1px;
+        /* height: 0; */
+        transition: all ease .3s;
+      }
+      .table-duplicate ~ .theadsync-sticky {
+        margin-top: 0px;
+      }
+      .table-duplicate ~ .theadsync-sticky thead{ 
+        opacity: 0;
+        visibility: hidden;
+      } 
+
+      .tableFixed {
+          background-color: #fff;
+          z-index: 9999;
+          /* opacity: 0;
+          visibility: hidden; */
+          margin: 0;
+      }
+
+      .table-duplicate.active .tableFixed {
+          opacity: 1;
+          visibility: visible;
+      }
+
+      .table-duplicate.active {
+    height: auto;
+}
+
+
+table th, table td {
+  white-space: nowrap;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="position-relative">
+    <div class="table-responsive bg-white border responsiveTable theadsync-sticky syncContainer0">
+      <table id="iTable" class="table table-hover m-0 tab1">
+          
+              <thead>
+                  <tr>
+                      <th>Name</th>
+                      <th>Role Type</th>
+                      <th>Role For</th>
+                      <th>Role For</th>
+                      <th>Role For</th>
+                      <th>Role For</th>
+                      <th>Created On</th>
+                      <th>Created On</th>
+                      <th>Created On</th>
+                      <th>Created On</th>
+                      <th>Created On</th>
+                      <th class="text-center">Action</th>
+                  </tr>
+              </thead>
+              <tbody>
+              
+                    <tr>
+                          <td data-title="Name">
+                              <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+                          </td>
+                          
+                          <td data-title="Role Type">External</td>
+                          <td data-title="Role Type">External</td>
+                          <td data-title="Role Type">External</td>
+                          <td data-title="Role Type">External</td>
+                          <td data-title="Role For">Collexo</td>
+                          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                          <td data-title="Action" class="text-lg-center">
+                          <div class="btn-group top-0 dropdown" data-container=".section-body">
+                              <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                                  <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                              </button>
+                              <div class="dropdown-menu dropdown-arrow">
+                                  
+                                  <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                              </div>
+                          </div>
+                          </td>
+                    </tr>
+              
+                    <tr>
+                      <td data-title="Name">
+                          <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+                      </td>
+                      
+                      <td data-title="Role Type">External</td>
+                      <td data-title="Role Type">External</td>
+                      <td data-title="Role Type">External</td>
+                      <td data-title="Role Type">External</td>
+                      <td data-title="Role For">Collexo</td>
+                      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                      <td data-title="Action" class="text-lg-center">
+                      <div class="btn-group top-0 dropdown" data-container=".section-body">
+                          <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                              <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                          </button>
+                          <div class="dropdown-menu dropdown-arrow">
+                              
+                              <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                          </div>
+                      </div>
+                      </td>
+                </tr>
+
+                <tr>
+                  <td data-title="Name">
+                      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+                  </td>
+                  
+                  <td data-title="Role Type">External</td>
+                  <td data-title="Role Type">External</td>
+                  <td data-title="Role Type">External</td>
+                  <td data-title="Role Type">External</td>
+                  <td data-title="Role For">Collexo</td>
+                  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                  <td data-title="Action" class="text-lg-center">
+                  <div class="btn-group top-0 dropdown" data-container=".section-body">
+                      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                      </button>
+                      <div class="dropdown-menu dropdown-arrow">
+                          
+                          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                      </div>
+                  </div>
+                  </td>
+            </tr>
+
+            <tr>
+              <td data-title="Name">
+                  <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+              </td>
+              
+              <td data-title="Role Type">External</td>
+              <td data-title="Role Type">External</td>
+              <td data-title="Role Type">External</td>
+              <td data-title="Role Type">External</td>
+              <td data-title="Role For">Collexo</td>
+              <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+              <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+              <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+              <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+              <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+              <td data-title="Action" class="text-lg-center">
+              <div class="btn-group top-0 dropdown" data-container=".section-body">
+                  <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                      <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                  </button>
+                  <div class="dropdown-menu dropdown-arrow">
+                      
+                      <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                  </div>
+              </div>
+              </td>
+        </tr>
+
+        <tr>
+          <td data-title="Name">
+              <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+          </td>
+          
+          <td data-title="Role Type">External</td>
+          <td data-title="Role Type">External</td>
+          <td data-title="Role Type">External</td>
+          <td data-title="Role Type">External</td>
+          <td data-title="Role For">Collexo</td>
+          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+          <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+          <td data-title="Action" class="text-lg-center">
+          <div class="btn-group top-0 dropdown" data-container=".section-body">
+              <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                  <span class="material-icons-outlined more_horiz"> more_horiz </span>
+              </button>
+              <div class="dropdown-menu dropdown-arrow">
+                  
+                  <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+              </div>
+          </div>
+          </td>
+    </tr>
+
+    <tr>
+      <td data-title="Name">
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+      </td>
+      
+      <td data-title="Role Type">External</td>
+      <td data-title="Role Type">External</td>
+      <td data-title="Role Type">External</td>
+      <td data-title="Role Type">External</td>
+      <td data-title="Role For">Collexo</td>
+      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+      <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+      <td data-title="Action" class="text-lg-center">
+      <div class="btn-group top-0 dropdown" data-container=".section-body">
+          <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+              <span class="material-icons-outlined more_horiz"> more_horiz </span>
+          </button>
+          <div class="dropdown-menu dropdown-arrow">
+              
+              <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+          </div>
+      </div>
+      </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+
+<tr>
+  <td data-title="Name">
+      <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test</a>
+  </td>
+  
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role Type">External</td>
+  <td data-title="Role For">Collexo</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+  <td data-title="Action" class="text-lg-center">
+  <div class="btn-group top-0 dropdown" data-container=".section-body">
+      <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+          <span class="material-icons-outlined more_horiz"> more_horiz </span>
+      </button>
+      <div class="dropdown-menu dropdown-arrow">
+          
+          <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+      </div>
+  </div>
+  </td>
+</tr>
+              
+              </tbody>
+          
+      </table>
+  </div>
+</div>
+
+<br>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="position-relative">
+  <div class="table-responsive bg-white border responsiveTable theadsync-sticky syncContainer1">
+    <table id="iTable" class="table table-hover m-0 tab2">
+        
+            <thead>
+                <tr>
+                    <th><div style="width: 100px; white-space: normal">dsaf Name sadf asdf sdaf asdf sadf asd fsadf asdf as fas fd</div></th>
+                    <th>dsaf Role Type</th>
+                    <th>dsaf Role For</th>
+                    <th>dsaf Role For</th>
+                    <th>dsaf Role For</th>
+                    <th>dsaf Role For</th>
+                    <th>dsaf Created On</th>
+                    <th>dsaf Created On</th>
+                    <th>dsaf Created On</th>
+                    <th>dsaf Created On</th>
+                    <th>Created On</th>
+                    <th class="text-center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+            
+                  <tr>
+                        <td data-title="Name">
+                            <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+                        </td>
+                        
+                        <td data-title="Role Type">External</td>
+                        <td data-title="Role Type">External</td>
+                        <td data-title="Role Type">External</td>
+                        <td data-title="Role Type">External</td>
+                        <td data-title="Role For">Collexo</td>
+                        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                        <td data-title="Action" class="text-lg-center">
+                        <div class="btn-group top-0 dropdown" data-container=".section-body">
+                            <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                                <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                            </button>
+                            <div class="dropdown-menu dropdown-arrow">
+                                
+                                <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                            </div>
+                        </div>
+                        </td>
+                  </tr>
+            
+                  <tr>
+                    <td data-title="Name">
+                        <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+                    </td>
+                    
+                    <td data-title="Role Type">External</td>
+                    <td data-title="Role Type">External</td>
+                    <td data-title="Role Type">External</td>
+                    <td data-title="Role Type">External</td>
+                    <td data-title="Role For">Collexo</td>
+                    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                    <td data-title="Action" class="text-lg-center">
+                    <div class="btn-group top-0 dropdown" data-container=".section-body">
+                        <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                            <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                        </button>
+                        <div class="dropdown-menu dropdown-arrow">
+                            
+                            <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                        </div>
+                    </div>
+                    </td>
+              </tr>
+
+              <tr>
+                <td data-title="Name">
+                    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+                </td>
+                
+                <td data-title="Role Type">External</td>
+                <td data-title="Role Type">External</td>
+                <td data-title="Role Type">External</td>
+                <td data-title="Role Type">External</td>
+                <td data-title="Role For">Collexo</td>
+                <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+                <td data-title="Action" class="text-lg-center">
+                <div class="btn-group top-0 dropdown" data-container=".section-body">
+                    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                    </button>
+                    <div class="dropdown-menu dropdown-arrow">
+                        
+                        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                    </div>
+                </div>
+                </td>
+          </tr>
+
+          <tr>
+            <td data-title="Name">
+                <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+            </td>
+            
+            <td data-title="Role Type">External</td>
+            <td data-title="Role Type">External</td>
+            <td data-title="Role Type">External</td>
+            <td data-title="Role Type">External</td>
+            <td data-title="Role For">Collexo</td>
+            <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+            <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+            <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+            <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+            <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+            <td data-title="Action" class="text-lg-center">
+            <div class="btn-group top-0 dropdown" data-container=".section-body">
+                <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                    <span class="material-icons-outlined more_horiz"> more_horiz </span>
+                </button>
+                <div class="dropdown-menu dropdown-arrow">
+                    
+                    <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+                </div>
+            </div>
+            </td>
+      </tr>
+
+      <tr>
+        <td data-title="Name">
+            <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+        </td>
+        
+        <td data-title="Role Type">External</td>
+        <td data-title="Role Type">External</td>
+        <td data-title="Role Type">External</td>
+        <td data-title="Role Type">External</td>
+        <td data-title="Role For">Collexo</td>
+        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+        <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+        <td data-title="Action" class="text-lg-center">
+        <div class="btn-group top-0 dropdown" data-container=".section-body">
+            <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+                <span class="material-icons-outlined more_horiz"> more_horiz </span>
+            </button>
+            <div class="dropdown-menu dropdown-arrow">
+                
+                <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+            </div>
+        </div>
+        </td>
+  </tr>
+
+  <tr>
+    <td data-title="Name">
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+    </td>
+    
+    <td data-title="Role Type">External</td>
+    <td data-title="Role Type">External</td>
+    <td data-title="Role Type">External</td>
+    <td data-title="Role Type">External</td>
+    <td data-title="Role For">Collexo</td>
+    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+    <td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+    <td data-title="Action" class="text-lg-center">
+    <div class="btn-group top-0 dropdown" data-container=".section-body">
+        <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+            <span class="material-icons-outlined more_horiz"> more_horiz </span>
+        </button>
+        <div class="dropdown-menu dropdown-arrow">
+            
+            <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+        </div>
+    </div>
+    </td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+
+<tr>
+<td data-title="Name">
+    <a data-permission_type="get_permission" href="javascript:void(0)" class="set_permission_btn" data-id="57" data-name="manager role test">manager role test s dsafsaf</a>
+</td>
+
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role Type">External</td>
+<td data-title="Role For">Collexo</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Created On">09 Jun 2023, 11:32 AM</td>
+<td data-title="Action" class="text-lg-center">
+<div class="btn-group top-0 dropdown" data-container=".section-body">
+    <button type="button" class="hover-effect btn-icon actionbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="lastColumnFix()">
+        <span class="material-icons-outlined more_horiz"> more_horiz </span>
+    </button>
+    <div class="dropdown-menu dropdown-arrow">
+        
+        <a data-permission_type="get_permission" href="javascript:void(0)" class="dropdown-item set_permission_btn" data-id="57" data-name="manager role test"> <span class="icon-eye iconssm" style="font-size: 1.5rem;"></span> View Permissions</a>
+    </div>
+</div>
+</td>
+</tr>
+            
+            </tbody>
+        
+    </table>
+</div>
+</div>
+   
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+   <script src="scrollSync.js"></script>
+   <script>
+   setTimeout(() => {
+    theadSticky()
+   }, 100);
+    
+   </script>
+  </body>
+</html>
