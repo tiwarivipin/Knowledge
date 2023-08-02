@@ -10,12 +10,14 @@
 <body>
 
 <div class="container mt-5">
-  <h1>Bootstrap 3.4 Dropdown with Tabs Example in avoid closing dropdown on click of link</h1>
+  <h1>Bootstrap 3.4 Dropdown with Tabs Example.<br>
+    <span class="small">Avoid closing dropdown on click of link</span>
+</h1>
   <div class="dropdown">
     <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Dropdown with Tabs
     </button>
-    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <div class="dropdown-menu stopClosingClick" aria-labelledby="dropdownMenuButton">
       <ul class="nav nav-tabs">
         <li class="active">
           <a href="#tab1" data-toggle="tab" data-target="#myDropdown">Tab 1</a>
@@ -48,7 +50,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 <script>
-$('.dropdown-menu a').click(function (e) {
+$('.stopClosingClick a').click(function (e) {
     e.stopPropagation()        
     $(this).tab('show')
 })
