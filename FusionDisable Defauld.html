@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FusionCharts Example</title>
+  <!-- Link to FusionCharts library -->
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+  <script src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+<body>
+
+<div id="chart-container">Chart will render here</div> 
+<script>
+  FusionCharts.ready(function () {
+    var dataSource = {
+      "chart": {
+        "caption": "Monthly Revenue",
+        "xAxisName": "Month",
+        "yAxisName": "Revenue (in USD)",
+        "theme": "fusion"
+      },
+      "categories": [
+        {
+          "category": [
+            { "label": "January" },
+            { "label": "February" },
+            { "label": "March" },
+            { "label": "April" },
+            { "label": "May" }
+          ]
+        }
+      ],
+      "dataset": [
+        {
+          "seriesname": "Series 1",
+          "data": [
+            { "value": "1500" },
+            { "value": "0" },
+            { "value": "2000" },
+            { "value": "0" },
+            { "value": "1800" }
+          ]
+        },
+        {
+          "seriesname": "Series 2",
+          "data": [
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" }
+          ]
+        },
+        {
+          "seriesname": "Series 3",
+          "data": [
+          { "value": "1800" },
+            { "value": "0" },
+            { "value": "2700" },
+            { "value": "0" },
+            { "value": "1500" }
+          ]
+        },
+        {
+          "seriesname": "Series 4",
+          "data": [
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" },
+            { "value": "0" }
+          ]
+        }
+      ]
+    };
+
+      
+    
+    let allSeriesZero = true;
+
+      for (const series of dataSource.dataset) {
+        const seriesValues = series.data.map((item) => parseFloat(item.value));
+        const allZero = seriesValues.every((value) => value === 0);
+        allSeriesZero = allSeriesZero && allZero;
+
+      // If all values in the current series are zero, disable it; otherwise, enable it
+        series.visible = allZero ? 0 : 1;
+      }
+
+      // If all series have all zero values, disable all series
+      if (allSeriesZero) {
+        for (const series of dataSource.dataset) {
+          series.visible = 0;
+        }
+    }
+
+    var chart = new FusionCharts({
+      type: 'msspline', // Change the chart type to msspline
+      renderAt: 'chart-container',
+      width: '500',
+      height: '300',
+      dataFormat: 'json',
+      dataSource: dataSource
+    });
+
+    chart.render();
+  });
+
+</script>
+
+</body>
+</html>
