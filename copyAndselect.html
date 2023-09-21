@@ -13,11 +13,11 @@
     <div class="copy-btn-title text-wrap" data-toggle="tooltip" data-placement="right" data-original-title="" title="">
         <span id="ref_no_3434234" class="text-truncate mxw">Vipin Tiwari</span>
         <input type="hidden" id="ref_no_val_3434234" class="form-control input-monospace input-sm bg-white"
-            value="Vipin Tiwari" readonly="">
+            value="Vipin Tiwari">
     </div>
 
     <button class="btn btn-sm border copy-btn" id="copyBtn_3434234" type="button"
-        onclick="copyTextFn_from_hidden('copyBtn_3434234', 'ref_no_val_3434234', 'ref_no_3434234')">
+        onclick="copyClipBoard('copyBtn_3434234', 'ref_no_val_3434234', 'ref_no_3434234')">
         <span>Copy</span>
     </button>
 
@@ -28,11 +28,11 @@
      <div class="copy-btn-title text-wrap" data-toggle="tooltip" data-placement="right" data-original-title="" title="">
         <span id="ref_no_mishra" class="text-truncate mxw">Dhiraj Mishra</span>
         <input type="hidden" id="ref_no_val_mishra" class="form-control input-monospace input-sm bg-white"
-            value="Dhiraj Mishra" readonly="">
+            value="Dhiraj Mishra">
     </div>
 
     <button class="btn btn-sm border copy-btn" id="copyBtn_mishra" type="button"
-        onclick="copyTextFn_from_hidden('copyBtn_mishra', 'ref_no_val_mishra', 'ref_no_mishra')">
+        onclick="copyClipBoard('copyBtn_mishra', 'ref_no_val_mishra', 'ref_no_mishra')">
         <span>Copy</span>
     </button>
 
@@ -40,7 +40,7 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <script>
-        function copyTextFn_from_hidden(btnId, elementId, elementTextId) {
+        function copyClipBoard(btnId, elementId, elementTextId) {
             var copyText = document.getElementById(elementId);
             var selectContent = document.getElementById(elementTextId);
             copyText.type = 'text';
